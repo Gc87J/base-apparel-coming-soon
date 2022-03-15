@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  height: 105vh;
+}
+
+.logo-container img {
+  margin-top: 30px;
+  width: 30%;
+  margin-bottom: 30px;
+  margin-left: 25px;
+}
+
+.main-content-container {
+  text-align: center;
+}
+.main-content-container .heading {
+  margin-top: 40px;
+  text-align: center;
+}
+.main-content-container .heading p {
+  font-size: 2rem;
+  letter-spacing: 10px;
+  font-weight: 600;
+}
+.main-content-container .heading p span {
+  color: #ce9797;
+  font-weight: 300;
+}
+.main-content-container .content {
+  margin: 23px 10px 29px 10px;
+  line-height: 1.5;
+}
+.main-content-container .content p {
+  font-size: 1rem;
+  color: #ce9797;
+  font-weight: 400;
+}
+.main-content-container form input {
+  height: 7vh;
+  width: 80%;
+  border-radius: 20px;
+  border: 1px solid #ce9797;
+}
+.main-content-container form input::-moz-placeholder {
+  color: #ce9797;
+  position: relative;
+  left: 20px;
+  opacity: 50%;
+}
+.main-content-container form input:-ms-input-placeholder {
+  color: #ce9797;
+  position: relative;
+  left: 20px;
+  opacity: 50%;
+}
+.main-content-container form input::placeholder {
+  color: #ce9797;
+  position: relative;
+  left: 20px;
+  opacity: 50%;
+}
+.main-content-container form button {
+  position: absolute;
+  width: 18%;
+  left: 73%;
+  border-radius: 25px;
+  height: 7vh;
+  border: none;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}/*# sourceMappingURL=styles.css.map */
