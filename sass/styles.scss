@@ -7,125 +7,154 @@
 body{
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
-  height: fit-content;
-} 
+}
 
-  main {
-    display: grid;
-    grid-template-rows: 10% 38% 55%
-  }
+.main-body-container {
+  // display: grid;
 
+  // grid-template-columns: 1fr;
+  // height: 100vh;
+  // grid-template-rows: 50px 50px 50px;
+  // max-width: 375px;
+  // grid-template-columns: repeat(auto-fill, 1fr);
 
-.logo-container{
-  // grid-row: 2/3;
+  // row-gap: 10px;
+
   
-  img{
-    margin-top: 30px;
-    width: 30%;
-    margin-bottom: 30px;
-    margin-left: 25px;
+ 
+ 
+.containers {
+  // background-color: #aaa;
+  // border: 2px solid #000;
+}
 
-  }
+
+
+.logo-container {
+  // height: fit-content;
+img {
+  width: 33%;
+  margin: 35px auto 25px 34px;
+  // margin-bottom: 25px;
+}
+
 }
 
 .image-container {
-  // grid-row: 1/2;
+  // height: fit-content;
+  
 
-  img:nth-of-type(1) {
-    display: block;
-  }
 
-  img:nth-of-type(2) {
-    display: none;
-  }
+
 }
+  
 
-
-.main-content-container{
-  text-align: center;
-
+.main-content-container {
+  height:fit-content;
 
 
 .heading {
-  margin-top: 40px;
- 
+  padding-top: 50px;
+  text-align: center;
 
-p{
-  font-size:2rem ;
+
+p {
+  font-size: 3rem;
   letter-spacing: 10px;
-  font-weight: 600;
 
 
-span{
+span {
   color: hsl(0, 36%, 70%) ;
   font-weight: 300;
+}
+}
+}
 
+}
+
+
+
+.main-content {
+
+  margin-top: 27px;
+  p{
+    color: hsl(0, 36%, 70%) ;
+  text-align: center;
+  line-height: 1.4;
   
-}}
+  }
 }
 
-.content {
-  margin: 23px 10px 29px 10px;
-  line-height: 1.5;
-
-
-p{
-  font-size: 1rem;
-  color: hsl(0, 36%, 70%);
-  font-weight: 400;
-}
-}
 
 
 form {
+  margin-top: 35px;
+  text-align: center;
+  padding-bottom: 60px;
+  max-width: 375px;
   position: relative;
 
-
-  input{
-    height: 7vh;
+  input {
+    border:1px solid hsl(0, 93%, 68%)
+    ;
+    height: 50px;
     width: 80%;
-    border-radius: 20px;
-    border: 1px solid hsl(0, 36%, 70%);
-
-    &::placeholder{
-      color: hsl(0, 36%, 70%) ;
-      position:relative;
-      left:20px;
-      opacity: 50%;
-
-    }
+    border-radius: 50px;
+    padding-left: 20px;
+    opacity: 40%;
     
-    // margin-left: 200px;
+    
+  }
+  ::placeholder {
+    color: hsl(0, 36%, 70%);
   }
 
-  .error-msg {
+
+  .error-msg{
     display: none;
     position: absolute;
-    right: 115px;
-    bottom: 6%;
-  } 
- 
+    right: 118px;
+    top: 13px;
 
+  }
 
   button {
+    border: none;
     position: absolute;
+    right: 38px;
+    height: 50px;
+    border-radius: 50px;
     width: 18%;
-    left: 73%;
-    border-radius: 25px;
-    height: 7vh;
-    border:none;
-    background: linear-gradient( 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%) )  ;
+    background: linear-gradient(135deg,  hsl(0, 80%, 86%), hsl(0, 74%, 74%))  ;
 
 
-    &:hover{
-      box-shadow: 3px 5px 20px #333;
-      
+    &:hover {
+     box-shadow: 3px 3px 10px #aaa ;
     }
+
   }
 }
-
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 @import "./desktopview"
 

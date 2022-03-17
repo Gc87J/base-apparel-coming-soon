@@ -17,11 +17,15 @@ testing.appendChild(Para)
 
 submitBtn.addEventListener("click", ()=> {
 
+ if (input.value = "") {
 
-  errorMsg.style.display = "block"
+   errorMsg.style.display = "block"
+ }
 
 
   
 }
 
 )
+
+
