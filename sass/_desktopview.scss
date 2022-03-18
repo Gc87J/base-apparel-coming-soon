@@ -6,19 +6,43 @@
 
 
   .main-body-container {
+    display: grid;
 
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px;
-  }
+  
 
 
   .logo-container {
+    // position: relative;
+    // left: 15%;
+    // top: 40px;
     grid-column: 1/ span 2;
-    grid-row: 1/ span 2;
+    grid-row: 1;
+
+    img {
+      width: 25%;
+  }
   }
 
 
   .image-container {
+    // border: 2px solid #000;
+
+
+    .img1 {
+      display: none;
+    }
+
+
+    .img3 {
+      display: block;
+      width: 100%;
+      // height: 100%;
+    }
+
+    
+
     grid-column: 3;
     grid-row:  1/ span 2;
   }
@@ -27,8 +51,43 @@
   .main-content-container {
     grid-column: 1/ span 2;
     grid-row: 2;
+    // position: relative;
+    // left: 20%;
+    // margin-right: 50%;
+    // align-self: center;
+
+  
+  .heading {
+    text-align: start;
+
+
+  }
+  
+
+  .main-content {
+
+
+    p{
+
+      text-align:start;
+
+    }
+  }
+
   }
 
 
   
+  form {
+    text-align: start;
+
+
+    input {
+
+      // width: 50%;
+    }
+  }
+
+
+}
 }

@@ -10,40 +10,40 @@ body{
 }
 
 .main-body-container {
-  // display: grid;
-
-  // grid-template-columns: 1fr;
-  // height: 100vh;
-  // grid-template-rows: 50px 50px 50px;
-  // max-width: 375px;
-  // grid-template-columns: repeat(auto-fill, 1fr);
-
-  // row-gap: 10px;
+ display: grid;
 
   
  
  
 .containers {
-  // background-color: #aaa;
-  // border: 2px solid #000;
+  
+
 }
 
 
 
 .logo-container {
-  // height: fit-content;
+
+
 img {
   width: 33%;
   margin: 35px auto 25px 34px;
-  // margin-bottom: 25px;
 }
 
 }
 
 .image-container {
-  // height: fit-content;
-  
 
+  
+.img1 {
+  display: block;
+  width: 100%;
+}
+
+
+.img3 {
+  display: none;
+}
 
 
 }
@@ -51,6 +51,7 @@ img {
 
 .main-content-container {
   height:fit-content;
+  
 
 
 .heading {
@@ -91,17 +92,21 @@ form {
   margin-top: 35px;
   text-align: center;
   padding-bottom: 60px;
-  max-width: 375px;
+  // max-width: 375px;
   position: relative;
 
   input {
     border:1px solid hsl(0, 93%, 68%)
     ;
     height: 50px;
-    width: 80%;
+    width: 87%;
     border-radius: 50px;
     padding-left: 20px;
     opacity: 40%;
+    position: relative;
+    // display: grid;
+    // justify-content: center;
+    // text-align: center;
     
     
   }
@@ -111,7 +116,7 @@ form {
 
 
   .error-msg{
-    display: none;
+    display: block;
     position: absolute;
     right: 118px;
     top: 13px;
@@ -121,10 +126,10 @@ form {
   button {
     border: none;
     position: absolute;
-    right: 38px;
+    right: 6%;
     height: 50px;
     border-radius: 50px;
-    width: 18%;
+    min-width: 18%;
     background: linear-gradient(135deg,  hsl(0, 80%, 86%), hsl(0, 74%, 74%))  ;
 
 

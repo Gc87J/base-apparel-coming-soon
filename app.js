@@ -1,5 +1,4 @@
 
-
 /*Variables*/
 const input = document.querySelector("input")
 
@@ -12,20 +11,18 @@ const testing = document.querySelector(".testing");
 
 const Para = document.createElement("p");
 
-testing.appendChild(Para)
+const testingImg = document.querySelector(".img1");
 
 
-submitBtn.addEventListener("click", ()=> {
 
- if (input.value = "") {
 
-   errorMsg.style.display = "block"
- }
+testingImg.addEventListener("click", ()=> {
 
+ errorMsg.style.display = "none"
 
   
 }
 
-)
+);
 
 

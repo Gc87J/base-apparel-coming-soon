@@ -9,9 +9,19 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+.main-body-container {
+  display: grid;
+}
 .main-body-container .logo-container img {
   width: 33%;
   margin: 35px auto 25px 34px;
+}
+.main-body-container .image-container .img1 {
+  display: block;
+  width: 100%;
+}
+.main-body-container .image-container .img3 {
+  display: none;
 }
 .main-body-container .main-content-container {
   height: -webkit-fit-content;
@@ -42,16 +52,16 @@ body {
   margin-top: 35px;
   text-align: center;
   padding-bottom: 60px;
-  max-width: 375px;
   position: relative;
 }
 .main-body-container form input {
   border: 1px solid #f96262;
   height: 50px;
-  width: 80%;
+  width: 87%;
   border-radius: 50px;
   padding-left: 20px;
   opacity: 40%;
+  position: relative;
 }
 .main-body-container form ::-moz-placeholder {
   color: #ce9797;
@@ -63,7 +73,7 @@ body {
   color: #ce9797;
 }
 .main-body-container form .error-msg {
-  display: none;
+  display: block;
   position: absolute;
   right: 118px;
   top: 13px;
@@ -71,10 +81,10 @@ body {
 .main-body-container form button {
   border: none;
   position: absolute;
-  right: 38px;
+  right: 6%;
   height: 50px;
   border-radius: 50px;
-  width: 18%;
+  min-width: 18%;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
 }
 .main-body-container form button:hover {
@@ -83,22 +93,39 @@ body {
 
 @media (min-width: 1440px) {
   .main-body-container {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px;
   }
-
-  .logo-container {
+  .main-body-container .logo-container {
     grid-column: 1/span 2;
-    grid-row: 1/span 2;
+    grid-row: 1;
   }
-
-  .image-container {
+  .main-body-container .logo-container img {
+    width: 25%;
+  }
+  .main-body-container .image-container {
     grid-column: 3;
     grid-row: 1/span 2;
   }
-
-  .main-content-container {
+  .main-body-container .image-container .img1 {
+    display: none;
+  }
+  .main-body-container .image-container .img3 {
+    display: block;
+    width: 100%;
+  }
+  .main-body-container .main-content-container {
     grid-column: 1/span 2;
     grid-row: 2;
+  }
+  .main-body-container .main-content-container .heading {
+    text-align: start;
+  }
+  .main-body-container .main-content-container .main-content p {
+    text-align: start;
+  }
+  .main-body-container form {
+    text-align: start;
   }
 }/*# sourceMappingURL=styles.css.map */
